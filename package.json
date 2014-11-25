@@ -1,0 +1,24 @@
+{
+  "name": "add-mock-module",
+  "version": "0.0.1",
+  "description": "angularjs: mock http calls",
+  "main": "index.js",
+  "engines": {
+    "node": "0.10.*"
+  },
+  "dependencies": {
+    "protractor": "~1.4.0"
+  },
+  "devDependencies": {
+    "http-server": "~0.7.*"
+  },
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "cd app && http-server -a localhost -p 8000",
+    "test": "protractor test/conf.js"
+  },
+  "author": "parazito",
+  "license": "Creative Commons"
+}
