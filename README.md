@@ -1,16 +1,44 @@
 # AngularJS end-to-end test
 
-How to mock a real backend http request.
+How to mock a real backend http request. Follow the below steps:
 
-# Install and test
+***
+
+### 1. Installing
+
+Clone the repository:
 
 ```bash
-git clone https://github.com/leandroh/angularjs-e2e-mock.git
-cd angularjs-e2e-mock
-npm install
-npm test
+https://github.com/leandroh/angularjs-e2e-mock
 ```
 
-# License
+Install dependencies:
 
-[Creative Commons Attribution 3.0 license](http://creativecommons.org/licenses/by/3.0).
+```bash
+npm install
+```
+
+### 2. Running AngularJS application test
+
+Start a static web server to run the test application:
+
+
+```bash
+npm start
+```
+
+### 3. Selenium Server
+
+Open a new terminal window and start up the Selenium Server:
+
+```bash
+./node_modules/.bin/webdriver-manager start
+```
+
+### 4. Protractor tests
+
+Run the tests against the sample application in a new terminal window:
+
+```bash
+npm test
+```
