@@ -5,7 +5,7 @@ module.exports = {
         {"name":"Leandro Heuert","username":"leandro.heuert@miniclinic.com.br"}
       ];
 
-      $httpBackend.whenGET('http://stage.miniclinic.com.br/patients').respond(patients);
+      $httpBackend.whenGET('/patients').respond(patients);
       $httpBackend.whenGET(/.*/).passThrough();
     });
   }
