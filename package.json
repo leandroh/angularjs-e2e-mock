@@ -17,6 +17,7 @@
   },
   "scripts": {
     "start": "cd app && http-server -a localhost -p 8000",
+    "postinstall": "./node_modules/.bin/webdriver-manager update",
     "test": "protractor test/conf.js"
   },
   "author": "parazito",
